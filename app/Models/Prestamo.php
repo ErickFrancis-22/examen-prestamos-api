@@ -12,8 +12,8 @@ class Prestamo extends Model
         'equipo',
         'cantidad',
         'solicitante',
-        'fechaPrestamo',
-        'fechaDevolucion',
+        'fechPrestamo',
+        'fechDevolucion',
         'estado',
     ];
 
@@ -21,8 +21,8 @@ class Prestamo extends Model
     {
         return [
             'cantidad' => 'integer',
-            'fechaPrestamo' => 'date:Y-m-d',
-            'fechaDevolucion' => 'date:Y-m-d',
+            'fechPrestamo' => 'date:Y-m-d',
+            'fechDevolucion' => 'date:Y-m-d',
         ];
     }
 }

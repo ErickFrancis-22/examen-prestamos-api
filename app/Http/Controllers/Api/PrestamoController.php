@@ -23,11 +23,11 @@ class PrestamoController extends Controller
             'equipo' => 'required|string|max:255',
             'cantidad' => 'required|integer|min:1',
             'solicitante' => 'required|string|max:255',
-            'fechaPrestamo' => 'required|date_format:Y-m-d',
-            'fechaDevolucion' => [
+            'fechPrestamo' => 'required|date_format:Y-m-d',
+            'fechDevolucion' => [
                 'required',
                 'date_format:Y-m-d',
-                'after_or_equal:fechaPrestamo',
+                'after_or_equal:fechPrestamo',
             ],
             'estado' => 'required|string|max:50',
         ]);
@@ -53,11 +53,11 @@ class PrestamoController extends Controller
             'equipo' => 'required|string|max:255',
             'cantidad' => 'required|integer|min:1',
             'solicitante' => 'required|string|max:255',
-            'fechaPrestamo' => 'required|date_format:Y-m-d',
-            'fechaDevolucion' => [
+            'fechPrestamo' => 'required|date_format:Y-m-d',
+            'fechDevolucion' => [
                 'required',
                 'date_format:Y-m-d',
-                'after_or_equal:fechaPrestamo',
+                'after_or_equal:fechPrestamo',
             ],
             'estado' => 'required|string|max:50',
         ]);
